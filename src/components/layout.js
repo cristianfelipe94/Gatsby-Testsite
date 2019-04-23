@@ -35,10 +35,12 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          <footer>
+          <footer style={{padding: `2% 0` }}>
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <p style={{display: `inline-block`, padding: `0 1%`}}>by</p>
+            <a href= 'https://www.instagram.com/stoned_christ/' target='_blank'>Cristian Felipe.</a>
           </footer>
         </div>
       </>
