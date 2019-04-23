@@ -1,0 +1,17 @@
+.contentOpenWidth {
+    position: relative;
+    height: 0vh;
+    width: 100%;
+    overflow: hidden;
+    margin: 0% 0%;
+    transition: 2s;
+}
+
+.actionOpenWidth:hover > .contentOpenWidth {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    margin: 5% 0%;
+    transition: 1s;
+}
