@@ -5,11 +5,12 @@
     overflow: hidden;
     margin: 0% 0%;
     transition: 2s;
+    cursor: pointer;
 }
 
 .actionOpenWidth:hover > .contentOpenWidth {
     position: relative;
-    height: 50vh;
+    height: 500px;
     width: 100%;
     overflow: hidden;
     margin: 5% 0%;

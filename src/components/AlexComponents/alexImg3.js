@@ -13,11 +13,11 @@ import Img from "gatsby-image"
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
-const MainGatsbyImage = () => (
+const AlexTrochutSecondWork = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "maxBio.jpg" }) {
+        placeholderImage: file(relativePath: { eq: "alexAssets/alex2.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 800) {
               ...GatsbyImageSharpFluid
@@ -30,4 +30,4 @@ const MainGatsbyImage = () => (
   />
 )
 
-export default MainGatsbyImage
+export default AlexTrochutSecondWork
