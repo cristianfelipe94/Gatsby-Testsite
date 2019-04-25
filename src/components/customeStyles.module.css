@@ -16,3 +16,24 @@
     margin: 5% 0%;
     transition: 1s;
 }
+
+.navLayoutDisplay {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.polygon-clip-heptagon {
+    -webkit-clip-path: polygon(50% 0, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0 60%, 10% 20%);
+    clip-path: polygon(50% 0, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0 60%, 10% 20%);
+    -webkit-clip-path: url("#polygon-clip-heptagon");
+    clip-path: url("#polygon-clip-heptagon");
+}
+
+.polygonClipRhomboid {
+    -webkit-clip-path: polygon(0% 100%, 30% 0%, 100% 0%, 70% 100%);
+    clip-path: polygon(0% 100%, 30% 0%, 100% 0%, 70% 100%);
+    -webkit-clip-path: url("#polygonClipRhomboid");
+    clip-path: url("#polygonClipRhomboid");
+}

@@ -1,6 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
+import NavigationLayout from "../components/navigationComponent"
+
 import SEO from "../components/seo"
 
 import PalomaFirstWork from "../components/PalomaComponents/palomaImg2"
@@ -12,13 +13,18 @@ const PalomaContent = () => (
     <SEO title="Paloma Rincón work" />
     <h1 style={{color: `white`}}>Paloma Rincón</h1>
     <p style={{color: `white`}}>Su trabajo se caracteriza por fotografías alocadas con gran variedad de colores.</p>
-    <div style = {{maxWidth: `500px`, padding: `10px`}}>
-      <PalomaFirstWork />
-      <PalomaSecondWork />
-      <PalomaThirdWork/>
+    <div style = {{maxWidth: `500px`, padding: `10px`, margin: `0 auto`}}>
+      <div style={{margin: `5% 0`}}>
+        <PalomaFirstWork />
+      </div>
+      <div style={{margin: `5% 0`}}>
+        <PalomaSecondWork />
+      </div>
+      <div style={{margin: `5% 0`}}>
+        <PalomaThirdWork/>
+      </div>
     </div>
-    <Link to="/">Volver a la página de Inicio.</Link>
-    <Link to="/alexWork">Volver al trabajo de Alex Trochut.</Link>
+    <NavigationLayout previousPath="/alexWork" previousTo="Alex Trochut" homePath="/" homeTo="Volver al inicio" nextPath="/maxWork" nextTo="Max-O-Matic"/>
   </Layout>
 )
 
