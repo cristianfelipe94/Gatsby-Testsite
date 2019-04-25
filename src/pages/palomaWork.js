@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import NavigationLayout from "../components/navigationComponent"
+import styles from "../components/customeStyles.module.css"
 
 import SEO from "../components/seo"
 
@@ -13,15 +14,15 @@ const PalomaContent = () => (
     <SEO title="Paloma Rincón work" />
     <h1 style={{color: `white`}}>Paloma Rincón</h1>
     <p style={{color: `white`}}>Su trabajo se caracteriza por fotografías alocadas con gran variedad de colores.</p>
-    <div style = {{maxWidth: `500px`, padding: `10px`, margin: `0 auto`}}>
-      <div style={{margin: `5% 0`}}>
+    <div className={styles.portfolioBlocksDisplay}>
+      <div className={styles.polygonClipRhomboid}>
         <PalomaFirstWork />
       </div>
-      <div style={{margin: `5% 0`}}>
+      <div className={styles.polygonClipRhomboid}>
         <PalomaSecondWork />
       </div>
-      <div style={{margin: `5% 0`}}>
-        <PalomaThirdWork/>
+      <div className={styles.polygonClipRhomboid}>
+        <PalomaThirdWork />
       </div>
     </div>
     <NavigationLayout previousPath="/alexWork" previousTo="Alex Trochut" homePath="/" homeTo="Volver al inicio" nextPath="/maxWork" nextTo="Max-O-Matic"/>

@@ -22,18 +22,45 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    border-top: 1px solid deeppink;
+    padding: 2%;
 }
 
-.polygon-clip-heptagon {
-    -webkit-clip-path: polygon(50% 0, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0 60%, 10% 20%);
-    clip-path: polygon(50% 0, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0 60%, 10% 20%);
-    -webkit-clip-path: url("#polygon-clip-heptagon");
-    clip-path: url("#polygon-clip-heptagon");
+.portfolioBlocksDisplay {
+    width: 100%;
+    height: 550px;
+    padding: 10px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid deeppink;
 }
 
 .polygonClipRhomboid {
     -webkit-clip-path: polygon(0% 100%, 30% 0%, 100% 0%, 70% 100%);
     clip-path: polygon(0% 100%, 30% 0%, 100% 0%, 70% 100%);
-    -webkit-clip-path: url("#polygonClipRhomboid");
-    clip-path: url("#polygonClipRhomboid");
+    margin: 5% 0;
+    width: 100%;
+    height: 450px;
+    transition: 1s;
+}
+
+.polygonClipRhomboid:hover {
+    -webkit-clip-path: polygon(0% 100%, 30% 0%, 100% 0%, 70% 100%);
+    clip-path: polygon(0% 100%, 30% 0%, 100% 0%, 70% 100%);
+    margin: 5% 0;
+    width: 300%;
+    height: 450px;
+    transition: 2s;
+}
+
+.expandImageDisplaying {
+    height: 100%;
+    width: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'IBM Plex Serif', serif;
 }

@@ -14,14 +14,14 @@ const MaxOMaticContent = () => (
     <SEO title="Max-O-Matic work" />
     <h1 style={{color: `white`}}>Max-O-Matic</h1>
     <p style={{color: `white`}}>Su trabajo se caracteriza por recortes que componen una obra.</p>
-    <div style = {{maxWidth: `500px`, padding: `10px`, margin: `0 auto`}}>
-      <div className={styles.polygonClipRhomboid} style={{margin: `5% 0`}}>
+    <div className={styles.portfolioBlocksDisplay}>
+      <div className={styles.polygonClipRhomboid}>
         <MaxOMaticFirstWork />
       </div>
-      <div style={{margin: `5% 0`}}>
+      <div className={styles.polygonClipRhomboid}>
       <MaxOMaticSecondWork />
       </div>
-      <div style={{margin: `5% 0`}}>
+      <div className={styles.polygonClipRhomboid}>
       <MaxOMaticThirdWork />
       </div>
     </div>

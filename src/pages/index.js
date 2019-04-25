@@ -10,7 +10,7 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div style={{color: `white`}}>
       <h2>Bienvenido a este sitio de pruebas</h2>
-      <p>
+      <p style={{borderBottom: `1px solid deeppink`, paddingBottom: `2%`}}>
         El objetivo de este pequeño sitio es mostrar el trabajo artistico hecho por diversos artistas,
         y poner en practica las habilidades de desarrollo web con el framework Gatsby.
       </p>

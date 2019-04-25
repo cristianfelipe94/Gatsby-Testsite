@@ -1,5 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import styles from "../customeStyles.module.css"
+
 import Img from "gatsby-image"
 
 /*
@@ -26,7 +28,7 @@ const AlexTrochutFirstWork = () => (
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} className={styles.expandImageDisplaying} />}
   />
 )
 
