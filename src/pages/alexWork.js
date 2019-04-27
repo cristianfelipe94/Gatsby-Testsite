@@ -14,15 +14,17 @@ const AlexTrochutContent = () => (
     <SEO title="Alex Trochut work" />
     <h1 style={{color: `white`}}>Alex Trochut</h1>
     <p style={{color: `white`}}>Su trabajo se caracteriza por composiciones de letras.</p>
-    <div className={styles.portfolioBlocksDisplay}>
-      <div className={styles.polygonClipRhomboid}>
-        <AlexTrochutFirstWork />
-      </div>
-      <div className={styles.polygonClipRhomboid}>
-        <AlexTrochutSecondWork />
-      </div>
-      <div className={styles.polygonClipRhomboid}>
-        <AlexTrochutThirdWork />
+    <div style= {{position: `relative`, overflow: `hidden`, height: `550px`}}>
+      <div className={styles.portfolioBlocksDisplayFirstPage}>
+        <div className={styles.polygonClipRhomboid}>
+          <AlexTrochutFirstWork />
+        </div>
+        <div className={styles.polygonClipRhomboid}>
+          <AlexTrochutSecondWork />
+        </div>
+        <div className={styles.polygonClipRhomboid}>
+          <AlexTrochutThirdWork />
+        </div>
       </div>
     </div>
     <NavigationLayout previousPath="/maxWork" previousTo="Max-O-Matic" homePath="/" homeTo="Volver al inicio" nextPath="/palomaWork" nextTo="Paloma Rincón"/>

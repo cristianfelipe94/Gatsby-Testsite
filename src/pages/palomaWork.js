@@ -14,15 +14,17 @@ const PalomaContent = () => (
     <SEO title="Paloma Rincón work" />
     <h1 style={{color: `white`}}>Paloma Rincón</h1>
     <p style={{color: `white`}}>Su trabajo se caracteriza por fotografías alocadas con gran variedad de colores.</p>
-    <div className={styles.portfolioBlocksDisplay}>
-      <div className={styles.polygonClipRhomboid}>
-        <PalomaFirstWork />
-      </div>
-      <div className={styles.polygonClipRhomboid}>
-        <PalomaSecondWork />
-      </div>
-      <div className={styles.polygonClipRhomboid}>
-        <PalomaThirdWork />
+    <div style= {{position: `relative`, overflow: `hidden`, height: `550px`}}> 
+      <div className={styles.portfolioBlocksDisplayFirstPage}>
+        <div className={styles.polygonClipRhomboid}>
+          <PalomaFirstWork />
+        </div>
+        <div className={styles.polygonClipRhomboid}>
+          <PalomaSecondWork />
+        </div>
+        <div className={styles.polygonClipRhomboid}>
+          <PalomaThirdWork />
+        </div>
       </div>
     </div>
     <NavigationLayout previousPath="/alexWork" previousTo="Alex Trochut" homePath="/" homeTo="Volver al inicio" nextPath="/maxWork" nextTo="Max-O-Matic"/>

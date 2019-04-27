@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import LayoutArt from "../components/artistComponent"
 import PalomaPortrait from "../components/PalomaComponents/palomaImg1"
+import { Link } from "gatsby"
 import SEO from "../components/seo"
 
 const PalomaIndexPage = () => (
@@ -9,7 +10,7 @@ const PalomaIndexPage = () => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div style={{color: `white`}}>
       <h2>Bienvenido a este sitio de pruebas</h2>
-      <p>
+      <p style={{borderBottom: `1px solid deeppink`, paddingBottom: `2%`}}>
         El objetivo de este pequeño sitio es mostrar el trabajo artistico hecho por diversos artistas,
         y poner en practica las habilidades de desarrollo web con el framework Gatsby.
       </p>
@@ -32,6 +33,7 @@ const PalomaIndexPage = () => (
           son muchas las grandes empresas que han tenido a Paloma entre sus filas.
         </p>
       </LayoutArt>
+      <Link to="/">Ver a Alex Trochut</Link>
   </Layout>
 )
 
