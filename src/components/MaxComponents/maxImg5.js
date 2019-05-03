@@ -15,7 +15,7 @@ import Img from "gatsby-image"
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
-const MaxOMaticThirdWork = () => (
+const MaxOMaticFourthWork = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -32,4 +32,4 @@ const MaxOMaticThirdWork = () => (
   />
 )
 
-export default MaxOMaticThirdWork
+export default MaxOMaticFourthWork
